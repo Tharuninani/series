@@ -1,0 +1,188 @@
+Series 1
+
+1.QUESTION:
+Write a program to generate the first n terms in the series 
+
+0.5,1.5,4.5,13.5,...
+
+ 
+
+INPUT FORMAT:
+
+Input consists of a single integer which corresponds to n.
+
+OUTPUT FORMAT:
+
+Output consists of the terms in the series separated by a blank space.
+
+SAMPLE INPUT:
+
+5
+SAMPLE OUTPUT:
+
+0.5 1.5 4.5 13.5 40.5
+
+Code:
+n=int(input())
+a=0.5
+for i in range(1,n+1,+1):
+    if i==n:
+        print(a)
+    else:
+        print(a,end=" ")
+    a=a*3
+
+Series 2
+2.QUESTION:
+Write a program to generate the first n terms in the series 
+
+121,225,361,...
+
+ 
+
+INPUT FORMAT:
+
+Input consists of a single integer which corresponds to n.
+
+OUTPUT FORMAT:
+
+Output consists of the terms in the series separated by a blank space.
+
+SAMPLE INPUT:
+
+4
+SAMPLE OUTPUT:
+
+121 225 361 529
+
+Code:
+n=int(input())
+a=11
+for i in range(1,n+1,+1):
+    if i==n:
+        print(a*a)
+    else:
+        print(a*a,end=" ")
+    
+    a=a+4
+    
+Series 3
+
+3.QUESTION:
+Write a program to generate the first n terms in the series.
+
+0,2,8,14,...,34
+
+ 
+
+INPUT FORMAT:
+
+Input consists of a single integer which corresponds to n.
+
+OUTPUT FORMAT:
+
+Output consists of the terms in the series separated by a blank space.
+
+SAMPLE INPUT:
+
+6
+SAMPLE OUTPUT:
+
+0 2 8 14 24 34
+
+
+Code:
+n=int(input())
+for i in range(1,n,+1):
+    if i%2==0:
+        pr=((i*i)-2)
+        print(pr,end=' ')
+    elif i%2!= 0:
+        pr=((i*i)-1)
+        print(pr,end=' ')
+for i in range(1,n+1,+1):
+    if i==n and i%2==0:
+        pr=((i*i)-2)
+        print(pr)
+    elif i==n and i%2!=0:
+        pr=((i*i)-1)
+        print(pr)
+
+Series 4
+
+4.QUESTION:
+Write a program to generate the first n terms in the series.
+
+1,2.0,3.0,6.0,9.0,18.0,27.0,...
+
+ 
+
+INPUT FORMAT:
+
+Input consists of a single integer which corresponds to n.
+
+OUTPUT FORMAT:
+
+Output consists of the terms in the series separated by a blank space. 
+
+SAMPLE INPUT:
+
+8
+SAMPLE OUTPUT:
+
+1 2.0 3.0 6.0 9.0 18.0 27.0 54.0
+
+Code:
+n=int(input())
+a=1
+b=2.0
+for i in range(1,n+1,1):
+    if i%2!=0:
+        if i==n:
+            print(a)
+        else:
+            print(a,end=" ")
+            a=a*3.0
+    else:
+        if i==n:
+            print(b)
+        else:
+            print(b,end=" ")
+            b=b*3.0
+
+
+Series 5
+5.QUESTION:
+Write a program to generate the first n terms in the series.
+
+4,5,9,18,34,...
+
+ 
+
+INPUT FORMAT:
+
+Input consists of a single integer which corresponds to n.
+
+OUTPUT FORMAT:
+
+Output consists of the terms in the series separated by a blank space. 
+
+SAMPLE INPUT:
+
+6
+SAMPLE OUTPUT:
+
+4 5 9 18 34 59
+
+Code:
+n=int(input())
+a=4
+print(a,end=' ')
+for i in range(2,n,+1):
+    a +=(i-1)*(i-1)
+    print(a,end=' ')
+for i in range(2,n+1,+1):
+    if i==n:
+        a +=(i-1)*(i-1)
+        print(a)
+    
